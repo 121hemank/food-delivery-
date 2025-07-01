@@ -1,5 +1,5 @@
 
-const API_BASE_URL = 'https://hemanku-food-backend.onrender.com/api';
+const API_BASE_URL = 'https://hemanku-food-backend.onrender.com';
 
 // Auth token management
 const getAuthToken = () => localStorage.getItem('token');
