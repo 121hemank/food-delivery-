@@ -16,7 +16,7 @@ app.use(express.json());
 // Connect to MongoDB
 const connectDB = async () => {
   try {
-    await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/hemanku', {
+    await mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://hemankpatel:1212hp1212@cluster0.4eqcomh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
