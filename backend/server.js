@@ -8,7 +8,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'https://hemanku-food-1.onrender.com',
+  origin: process.env.FRONTEND_URL || 'https://hemanku.vercel.app',
   credentials: true
 }));
 app.use(express.json());
