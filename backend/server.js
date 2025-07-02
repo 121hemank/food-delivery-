@@ -1,4 +1,3 @@
-
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -6,11 +5,15 @@ require('dotenv').config();
 
 const app = express();
 
-// Middleware
+// CORS configuration
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'https://hemanku-food-1.onrender.com',
-  credentials: true
+  origin: process.env.FRONTEND_URL || 'https://hemanku-food-1.onrender.com', // No trailing slash
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Include OPTIONS for preflight
+  allowedHeaders: ['Content-Type', 'Authorization'], // Common headers for API requests
+  credentials: true, // Support cookies or auth tokens
 }));
+
+// Parse JSON requests
 app.use(express.json());
 
 // Connect to MongoDB
