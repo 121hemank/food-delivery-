@@ -1,3 +1,5 @@
+deployed link-https://hemanku-food-1.onrender.com
+
 🍽️ Hemanku Food Delivery App
 Welcome to Hemanku Food Delivery App, your go-to platform for ordering delicious meals from local restaurants with ease! 🌮 This app connects food lovers with their favorite eateries, offering real-time tracking, secure payments, and a delightful user experience. Built with modern technologies, it's designed for scalability and performance.
 
