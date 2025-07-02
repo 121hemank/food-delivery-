@@ -1,5 +1,6 @@
 
 # Hemanku Backend API
+deployed link for backend- https://hemanku-food-backend.onrender.com
 
 Backend API for the Hemanku Food Delivery Application built with Node.js, Express, and MongoDB.
 
