@@ -7,7 +7,11 @@ const app = express();
 
 // CORS configuration
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'https://hemanku-food-1.onrender.com', // No trailing slash
+  origin: [
+    process.env.FRONTEND_URL || 'https://hemanku-food-1.onrender.com',
+    'http://localhost:8080',
+    'http://127.0.0.1:8080'
+  ],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Include OPTIONS for preflight
   allowedHeaders: ['Content-Type', 'Authorization'], // Common headers for API requests
   credentials: true, // Support cookies or auth tokens
